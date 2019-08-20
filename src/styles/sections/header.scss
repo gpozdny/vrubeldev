@@ -1,0 +1,118 @@
+.header {
+    position: fixed;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    padding-left: 300px;
+    padding-right: 60px;
+    padding-top: 50px;
+    z-index: 9;
+
+    &__menu {
+        font-size: 24px;
+        color: #2196b4;
+        text-transform: uppercase;
+        display: flex;
+
+
+    }
+
+    &__right {
+        display: flex;
+        justify-content: center;
+        // align-items: center;
+    }
+
+    &__button-wrapper {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        span {
+            display: inline-block;
+            height: 1px;
+            background-color: #2196b4;
+
+            &:nth-of-type(1) {
+                width: 20%;
+            }
+            &:nth-of-type(2) {
+                width: 10%;
+            }
+            &:nth-of-type(3) {
+                width: 20%;
+            }
+        }
+    }
+
+    &__elements {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        margin-left: 15px;
+        cursor: pointer;
+        span + span {
+            margin-top: 6px;
+        }
+
+        span {
+            display: inline-block;
+            height: 1px;
+            background-color: #2196b4;
+
+            &:nth-of-type(1) {
+                width: 20%;
+            }
+            &:nth-of-type(2) {
+                width: 15%;
+            }
+            &:nth-of-type(3) {
+                width: 10%;
+            }
+        }
+    }
+
+    &__contacts {
+        display: flex;
+        flex-direction: column;
+
+        a {
+            color: #2196b4;
+            text-transform: uppercase;
+        }
+    }
+
+    &__btn {
+        background-color: #2196b4;
+        font-size: 20px;
+        padding: 10px 20px;
+        cursor: pointer;
+        text-transform: uppercase;
+        margin-left: 40px;
+        transition: all .3s ease;
+
+        &:hover {
+            background-color: #1f859e;
+        }
+    }
+}
+
+.dropdown {
+    display: flex;
+    color: #2196b4;
+    font-size: 24px;
+    text-transform: uppercase;    
+    flex-direction: column;
+    margin-left: 95px;
+    margin-top: 40px;
+    
+    a + a {
+        margin-top: 25px;
+    }
+    transition: all .3s ease;
+
+    a {
+        &:hover {
+            color: #1f859e;
+        }
+    }
+}

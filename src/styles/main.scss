@@ -2,3 +2,16 @@
 @import 'mixins/index';
 @import 'common/index';
 @import 'modules/index';
+
+// sections
+
+@import 'sections/index.scss';
+@import 'sections/header.scss';
+
+
+// adjustments 
+
+body {
+    font-family: 'ttdrugs-regular';
+    color: #ffffff;
+}
